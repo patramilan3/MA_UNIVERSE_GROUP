@@ -1,0 +1,106 @@
+/* ============================================================
+   "Let's build what's next" section  —  everything is scoped to .mau-next
+   so it cannot clash with the rest of the MA Universe site.
+   Tweak the look from the variables just below.
+============================================================ */
+.mau-next{
+  --mau-gold:#f1c97b;
+  --mau-gold-deep:#e2ab52;
+  --mau-text:#f6f3ec;
+  --mau-font:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mau-display-font:"Space Grotesk","Inter",system-ui,sans-serif;
+  --mau-bg:url('../img/portal-background.webp'); /* restored preferred cinematic portal background */
+  --mau-stack-w:clamp(260px,28vw,460px);           /* responsive card width; stack animation unchanged */
+
+  position:relative;isolation:isolate;overflow:hidden;
+  padding:clamp(64px,9vw,128px) 0;
+  color:var(--mau-text);font-family:var(--mau-font);
+  background:#02050c var(--mau-bg) center/cover no-repeat;
+}
+.mau-next *,.mau-next *::before,.mau-next *::after{box-sizing:border-box}
+/* MA Universe Technology-style cinematic vignette: almost-black on the copy side,
+   with the supplied golden portal still visible as a restrained background detail. */
+.mau-next::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(90deg,rgba(1,5,9,.97) 0%,rgba(1,5,9,.93) 20%,rgba(1,5,9,.78) 39%,rgba(1,5,9,.50) 58%,rgba(1,5,9,.34) 76%,rgba(1,5,9,.48) 100%),
+             linear-gradient(180deg,rgba(0,0,0,.48) 0%,rgba(0,0,0,.18) 32%,rgba(0,0,0,.28) 62%,rgba(0,0,0,.68) 100%)}
+
+.mau-next__inner{
+  width:calc(100% - 5vw);max-width:none;margin-inline:auto;
+  display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr);   /* 40 : 60 */
+  align-items:center;gap:clamp(24px,3vw,56px);
+  min-height:calc(var(--mau-stack-w)*1.25 + 12vw);
+}
+
+/* ---------------- left : copy ---------------- */
+.mau-next__copy{position:relative;z-index:3;max-width:34rem}
+.mau-next__eyebrow{margin:0 0 clamp(18px,2.2vw,32px);font-size:clamp(10px,.82vw,13px);font-weight:500;
+  letter-spacing:.34em;text-transform:uppercase;color:var(--mau-gold)}
+.mau-next__eyebrow i{font-style:normal;margin:0 .5em;opacity:.8}
+.mau-next__title{font-family:var(--mau-display-font);margin:0;font-weight:400;text-transform:uppercase;line-height:.96;letter-spacing:-.012em;
+  font-size:clamp(2.3rem,4.5vw,5rem);color:#fff}
+.mau-next__title span{display:block}
+.mau-next__gold{background:linear-gradient(180deg,#f8dc9c 0%,var(--mau-gold) 45%,var(--mau-gold-deep) 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--mau-gold)}
+.mau-next__lead{margin:clamp(20px,2.4vw,34px) 0 clamp(26px,3vw,42px);max-width:26em;
+  font-family:var(--mau-font);font-size:15px;font-weight:400;line-height:1.78;color:#c4c9cd}
+/* ---------------- values : compact 2 × 2 MA-style feature grid ---------------- */
+.mau-next__values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(16px,2vw,30px);
+  max-width:31rem;margin:0 0 clamp(24px,2.4vw,34px)}
+.mau-next__value{display:flex;align-items:center;gap:10px;min-width:0;padding:12px 0 11px;
+  border-bottom:1px solid rgba(241,201,123,.22)}
+.mau-next__value-icon{width:30px;height:30px;flex:0 0 30px;display:grid;place-items:center;border:1px solid rgba(241,201,123,.68);
+  border-radius:50%;color:var(--mau-gold);font-size:17px;line-height:1;box-shadow:0 0 14px rgba(241,201,123,.08)}
+.mau-next__value-copy{display:flex;flex-direction:column;gap:4px;min-width:0}
+.mau-next__value-copy b{font-family:var(--mau-display-font);font-size:clamp(9px,.72vw,11px);font-weight:700;letter-spacing:.09em;color:#f5f0e6}
+.mau-next__value-copy small{font-family:var(--mau-font);font-size:clamp(10px,.78vw,12px);line-height:1.35;color:rgba(246,243,236,.62)}
+
+.mau-next__btn{font-family:var(--mau-display-font);display:inline-flex;align-items:center;gap:clamp(18px,2.2vw,34px);
+  padding:clamp(14px,1.3vw,19px) clamp(24px,2.4vw,38px);border-radius:999px;text-decoration:none;
+  font-size:clamp(.72rem,.86vw,.9rem);font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:#1a1204;
+  background:linear-gradient(180deg,#f7d891,var(--mau-gold) 55%,var(--mau-gold-deep));
+  box-shadow:0 0 0 1px rgba(255,224,160,.35) inset,0 10px 34px -6px rgba(241,201,123,.55);
+  transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.mau-next__btn svg{transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.mau-next__btn:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(255,224,160,.5) inset,0 14px 40px -6px rgba(241,201,123,.7)}
+.mau-next__btn:hover svg{transform:translateX(5px)}
+.mau-next__btn:focus-visible{outline:2px solid #fff;outline-offset:3px}
+
+/* ---------------- right : stacked cards ---------------- */
+.mau-next__stage{position:relative;z-index:2;display:flex;justify-content:flex-end;
+  /* Keep the stack animation intact; shift its whole stage left on desktop to balance the copy. */
+  padding:2vw clamp(100px,10.5vw,175px) calc(var(--mau-stack-w)*.12) 0}
+@media (min-width:1601px){
+  .mau-next__stage{transform:translateX(calc(-1 * clamp(100px,13.8vw,200px)))}
+}
+@media (min-width:901px){
+  .mau-next__lead{max-width:31em}
+}
+.mau-stack{position:relative;width:var(--mau-stack-w);aspect-ratio:4/5;isolation:isolate;flex:none}
+.mau-card{position:absolute;top:0;left:0;width:100%;margin:0;overflow:hidden;border-radius:2px;background:#1a1510;
+  will-change:transform;box-shadow:0 1px 2px rgba(0,0,0,.4),0 22px 50px -18px rgba(0,0,0,.65)}
+.mau-card img{display:block;width:100%;height:auto;user-select:none;-webkit-user-drag:none;pointer-events:none}
+/* NOTE: no hover / parallax on the stack on purpose — nothing reacts to the cursor. */
+
+/* ---------------- tablet / phone : 1 column ---------------- */
+@media (max-width:900px){
+  .mau-next{--mau-stack-w:min(70vw,380px);padding:clamp(56px,12vw,88px) 0}
+  .mau-next__inner{grid-template-columns:minmax(0,1fr);gap:clamp(28px,7vw,48px);min-height:0}
+  .mau-next__copy{max-width:none}
+  .mau-next__values{max-width:34rem;gap:0 20px}
+  .mau-next__title{font-size:clamp(2.3rem,10.5vw,4.2rem)}
+  .mau-next__stage{justify-content:center;padding:clamp(24px,6vw,36px) 0 calc(var(--mau-stack-w)*.2)}
+}
+@media (max-width:520px){
+  .mau-next__values{gap:0 12px;margin-bottom:24px}
+  .mau-next__value{gap:8px;padding:10px 0}
+  .mau-next__value-icon{width:26px;height:26px;flex-basis:26px;font-size:15px}
+  .mau-next__value-copy b{font-size:9px;letter-spacing:.06em}
+  .mau-next__value-copy small{font-size:10px}
+}
+@media (max-width:360px){
+  .mau-next__values{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:420px){
+  .mau-next__eyebrow{letter-spacing:.24em}
+}
+@media (prefers-reduced-motion:reduce){.mau-next__btn,.mau-next__btn svg{transition:none}}

@@ -1,0 +1,583 @@
+/* =========================================================
+   DESKTOP READABILITY PASS (>= 901px). Phones/tablets use
+   mobile-readability.css. Minimums: uppercase labels 12px,
+   short text 14px, sentences 15px, paragraphs 16px. Text already
+   larger is untouched. Loaded near-last; the html:not(#_a):not(#_b)
+   prefix only raises specificity over the older !important rules.
+   To undo: remove the <link> to this file from index.html.
+========================================================= */
+
+/* ~1024px screens */
+@media (min-width:901px) and (max-width:1151px){
+  html:not(#_a):not(#_b) #visionCoreTag{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) a.business-next{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.card-cta{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.card-cta span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) a.contact-info-card span b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.copyright-link{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.primary{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.primary b{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.secondary{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.secondary i{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.technology-cta{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.universe-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.universe-cta span{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.vision-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.vision-cta span{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.who-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-hrims h3{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) article.business-world.world-hrims p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-laptop h3{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) article.business-world.world-laptop p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-payroll h3{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) article.business-world.world-payroll p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-recruitment h3{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) article.business-world.world-recruitment p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-business h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-business p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-people h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-people p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-possibility h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-possibility p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-tech h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-tech p{font-size:12px!important;}
+  html:not(#_a):not(#_b) button.contact-submit{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) button.custom-select-control span{font-size:14px!important;}
+  html:not(#_a):not(#_b) button.pager-item span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div > b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div small{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.business-copy p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.business-detail-grid div span{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.business-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.business-index span{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-form-heading div span{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-form-heading p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.contact-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-index span{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-info-card span b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.copy p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.eyebrow{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.footer-mark{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.planet-copy p{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.technology-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.technology-index span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div.universe-scroll-cue span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-section-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-section-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.universe-stats div span{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.vision-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.vision-pillar span{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-pillar strong{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-scroll span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.visual-caption{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.visual-caption span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div.who-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.who-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.who-panel-number{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.who-scroll-mark span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.who-stats div span{font-size:12px!important;}
+  html:not(#_a):not(#_b) label span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) label.contact-message-field span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) p a{font-size:14px!important;}
+  html:not(#_a):not(#_b) p b{font-size:14px!important;}
+  html:not(#_a):not(#_b) p span{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.business-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.contact-copy{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.contact-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.contact-security{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.copyright-text{font-size:14px!important;}
+  html:not(#_a):not(#_b) p.footer-legal-text{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.footer-sub-text{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.technology-kicker{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) p.technology-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.universe-description{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.universe-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.vision-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.vision-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.who-body{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.who-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.who-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) span b{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) span em{font-size:15px!important;line-height:1.5!important;}
+}
+
+/* ~1280px screens */
+@media (min-width:1152px) and (max-width:1323px){
+  html:not(#_a):not(#_b) #visionCoreTag{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) a.business-next{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.card-cta{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.card-cta span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) a.contact-info-card span b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.copyright-link{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.primary{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.primary b{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.secondary{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.secondary i{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.technology-cta{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.universe-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.universe-cta span{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.vision-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.vision-cta span{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.who-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-hrims h3{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) article.business-world.world-hrims p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-laptop h3{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) article.business-world.world-laptop p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-payroll h3{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) article.business-world.world-payroll p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-recruitment h3{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) article.business-world.world-recruitment p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-business h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-business p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-people h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-people p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-possibility h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-possibility p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-tech h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-tech p{font-size:12px!important;}
+  html:not(#_a):not(#_b) button.contact-submit{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) button.custom-select-control span{font-size:14px!important;}
+  html:not(#_a):not(#_b) button.pager-item span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div > b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div small{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.business-copy p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.business-detail-grid div span{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.business-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.business-index span{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-form-heading div span{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-form-heading p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.contact-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-index span{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-info-card span b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.copy p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.eyebrow{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.footer-mark{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.planet-copy p{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.technology-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.technology-index span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div.technology-scroll span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-scroll-cue span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-section-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-section-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.universe-stats div span{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.vision-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.vision-pillar span{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-pillar strong{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-scroll span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.visual-caption{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.visual-caption span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div.who-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.who-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.who-panel-number{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.who-scroll-mark span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.who-stats div span{font-size:12px!important;}
+  html:not(#_a):not(#_b) label span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) label.contact-message-field span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) p a{font-size:14px!important;}
+  html:not(#_a):not(#_b) p b{font-size:14px!important;}
+  html:not(#_a):not(#_b) p span{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.business-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.contact-copy{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.contact-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.contact-security{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.copyright-text{font-size:14px!important;}
+  html:not(#_a):not(#_b) p.footer-legal-text{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.footer-sub-text{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.technology-kicker{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) p.technology-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.universe-description{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.universe-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.vision-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.vision-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.who-body{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.who-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.who-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) span b{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) span em{font-size:15px!important;line-height:1.5!important;}
+}
+
+/* ~1366px screens */
+@media (min-width:1324px) and (max-width:1403px){
+  html:not(#_a):not(#_b) #visionCoreTag{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) a.business-next{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.card-cta{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.card-cta span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) a.contact-info-card span b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.copyright-link{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.primary{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.primary b{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.secondary{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.secondary i{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.technology-cta{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.universe-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.universe-cta span{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.vision-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.vision-cta span{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.who-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-hrims p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-laptop p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-payroll p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-recruitment p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-business h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-business p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-people h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-people p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-possibility h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-possibility p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-tech h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-tech p{font-size:12px!important;}
+  html:not(#_a):not(#_b) button.contact-submit{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) button.custom-select-control span{font-size:14px!important;}
+  html:not(#_a):not(#_b) button.pager-item span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div > b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div small{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.business-copy p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.business-detail-grid div span{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.business-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.business-index span{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-form-heading div span{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-form-heading p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.contact-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-index span{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-info-card span b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.copy p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.eyebrow{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.footer-mark{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.planet-copy p{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.technology-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.technology-index span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div.technology-scroll span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-scroll-cue span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-section-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-section-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.universe-stats div span{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.vision-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.vision-pillar span{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-pillar strong{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-scroll span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.visual-caption{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.visual-caption span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div.who-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.who-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.who-panel-number{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.who-scroll-mark span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.who-stats div span{font-size:12px!important;}
+  html:not(#_a):not(#_b) label span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) label.contact-message-field span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) p a{font-size:14px!important;}
+  html:not(#_a):not(#_b) p b{font-size:14px!important;}
+  html:not(#_a):not(#_b) p span{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.business-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.contact-copy{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.contact-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.contact-security{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.copyright-text{font-size:14px!important;}
+  html:not(#_a):not(#_b) p.footer-legal-text{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.footer-sub-text{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.technology-kicker{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) p.technology-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.universe-description{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.universe-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.vision-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.vision-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.who-body{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.who-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.who-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) span b{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) span em{font-size:15px!important;line-height:1.5!important;}
+}
+
+/* ~1440px screens */
+@media (min-width:1404px) and (max-width:1519px){
+  html:not(#_a):not(#_b) #visionCoreTag{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) a.business-next{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.card-cta{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.card-cta span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) a.contact-info-card span b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.copyright-link{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.primary{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.primary b{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.secondary{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.secondary i{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.technology-cta{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.universe-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.universe-cta span{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.vision-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.vision-cta span{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.who-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-hrims p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-laptop p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-payroll p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-recruitment p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-business h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-business p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-people h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-people p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-possibility h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-possibility p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-tech h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-tech p{font-size:12px!important;}
+  html:not(#_a):not(#_b) button.contact-submit{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) button.custom-select-control span{font-size:14px!important;}
+  html:not(#_a):not(#_b) button.pager-item span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div > b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div small{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.business-copy p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.business-detail-grid div span{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.business-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.business-index span{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-form-heading div span{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-form-heading p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.contact-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-index span{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-info-card span b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.copy p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.eyebrow{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.footer-mark{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.planet-copy p{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.technology-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.technology-index span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div.technology-scroll span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-scroll-cue span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-section-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-section-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.universe-stats div span{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.vision-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.vision-pillar span{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-pillar strong{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-scroll span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.visual-caption{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.visual-caption span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div.who-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.who-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.who-panel-number{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.who-scroll-mark span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.who-stats div span{font-size:12px!important;}
+  html:not(#_a):not(#_b) label span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) label.contact-message-field span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) p a{font-size:14px!important;}
+  html:not(#_a):not(#_b) p b{font-size:14px!important;}
+  html:not(#_a):not(#_b) p span{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.business-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.contact-copy{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.contact-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.contact-security{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.copyright-text{font-size:14px!important;}
+  html:not(#_a):not(#_b) p.footer-legal-text{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.footer-sub-text{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.technology-kicker{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) p.technology-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.universe-description{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.universe-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.vision-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.vision-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.who-body{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.who-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.who-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) span b{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) span em{font-size:15px!important;line-height:1.5!important;}
+}
+
+/* ~1600px screens */
+@media (min-width:1520px) and (max-width:1759px){
+  html:not(#_a):not(#_b) #visionCoreTag{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) a.business-next{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.card-cta{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.card-cta span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) a.contact-info-card span b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.copyright-link{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.primary{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.primary b{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.secondary{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.secondary i{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.technology-cta{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.universe-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.universe-cta span{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.vision-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.vision-cta span{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.who-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-hrims p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-laptop p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-payroll p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-recruitment p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-business h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-business p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-people h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-people p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-possibility h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-possibility p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-tech h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-tech p{font-size:12px!important;}
+  html:not(#_a):not(#_b) button.contact-submit{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) button.custom-select-control span{font-size:14px!important;}
+  html:not(#_a):not(#_b) button.pager-item span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div > b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div small{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.business-copy p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.business-detail-grid div span{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.business-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.business-index span{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-form-heading div span{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-form-heading p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.contact-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-index span{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-info-card span b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.copy p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.eyebrow{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.footer-mark{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.planet-copy p{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.technology-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.technology-index span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div.technology-scroll span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-scroll-cue span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-section-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-section-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.universe-stats div span{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.vision-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.vision-pillar span{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-pillar strong{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-scroll span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.visual-caption{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.visual-caption span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div.who-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.who-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.who-panel-number{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.who-scroll-mark span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.who-stats div span{font-size:12px!important;}
+  html:not(#_a):not(#_b) label span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) label.contact-message-field span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) p a{font-size:14px!important;}
+  html:not(#_a):not(#_b) p b{font-size:14px!important;}
+  html:not(#_a):not(#_b) p span{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.business-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.contact-copy{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.contact-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.contact-security{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.copyright-text{font-size:14px!important;}
+  html:not(#_a):not(#_b) p.footer-legal-text{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.footer-sub-text{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.technology-kicker{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) p.technology-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.universe-description{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.universe-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.vision-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.vision-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.who-body{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.who-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.who-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) span b{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) span em{font-size:15px!important;line-height:1.5!important;}
+}
+
+/* ~1920px screens */
+@media (min-width:1760px){
+  html:not(#_a):not(#_b) #visionCoreTag{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) a.business-next{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.card-cta{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.card-cta span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) a.contact-info-card span b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.copyright-link{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.primary{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.primary b{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.secondary{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.secondary i{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.technology-cta{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) a.universe-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.universe-cta span{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.vision-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) a.vision-cta span{font-size:14px!important;}
+  html:not(#_a):not(#_b) a.who-cta{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-hrims p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-laptop p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-payroll p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.business-world.world-recruitment p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-business h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-business p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-people h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-people p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-possibility h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-possibility p{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-tech h3{font-size:12px!important;}
+  html:not(#_a):not(#_b) article.who-panel.who-panel-tech p{font-size:12px!important;}
+  html:not(#_a):not(#_b) button.contact-submit{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) button.custom-select-control span{font-size:14px!important;}
+  html:not(#_a):not(#_b) button.pager-item span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div > b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div small{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.business-copy p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.business-detail-grid div span{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.business-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.business-index span{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-form-heading div span{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-form-heading p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.contact-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-index span{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.contact-info-card span b{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.copy p{font-size:16px!important;}
+  html:not(#_a):not(#_b) div.eyebrow{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.footer-mark{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.planet-copy p{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.technology-index b{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.technology-index span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div.technology-scroll span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-scroll-cue span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-section-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.universe-section-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.universe-stats div span{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.vision-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.vision-pillar span{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-pillar strong{font-size:12px!important;}
+  html:not(#_a):not(#_b) div.vision-scroll span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.visual-caption{font-size:12px!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) div.visual-caption span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) div.who-index b{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.who-index span{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.who-panel-number{font-size:14px!important;}
+  html:not(#_a):not(#_b) div.who-scroll-mark span{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) div.who-stats div span{font-size:12px!important;}
+  html:not(#_a):not(#_b) label span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) label.contact-message-field span{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) p a{font-size:14px!important;}
+  html:not(#_a):not(#_b) p b{font-size:14px!important;}
+  html:not(#_a):not(#_b) p span{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.business-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.contact-copy{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.contact-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.contact-security{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.copyright-text{font-size:14px!important;}
+  html:not(#_a):not(#_b) p.footer-legal-text{font-size:15px!important;}
+  html:not(#_a):not(#_b) p.footer-sub-text{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.technology-kicker{font-size:12px!important;letter-spacing:.16em!important;line-height:1.4!important;}
+  html:not(#_a):not(#_b) p.technology-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.universe-description{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.universe-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.vision-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.vision-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.who-body{font-size:16px!important;}
+  html:not(#_a):not(#_b) p.who-kicker{font-size:12px!important;letter-spacing:.16em!important;}
+  html:not(#_a):not(#_b) p.who-lead{font-size:16px!important;}
+  html:not(#_a):not(#_b) span b{font-size:14px!important;line-height:1.5!important;}
+  html:not(#_a):not(#_b) span em{font-size:15px!important;line-height:1.5!important;}
+}
+
+/* =========================================================
+   LAYOUT TWEAKS needed because desktop text is now larger
+========================================================= */
+@media (min-width:901px){
+  /* Technology chips: let subtitles wrap instead of colliding */
+  html:not(#_a):not(#_b) .technology-capabilities .tech-node b,
+  html:not(#_a):not(#_b) .technology-capabilities .tech-node small{white-space:normal!important}
+  html:not(#_a):not(#_b) .technology-capabilities .tech-node small{letter-spacing:.06em!important;line-height:1.5!important}
+  /* Business sections: caption under the orb was half-hidden behind it */
+  html:not(#_a):not(#_b) .business-visual .visual-caption{
+    z-index:6!important;left:50%!important;right:auto!important;
+    transform:translateX(-50%)!important;bottom:2%!important;white-space:nowrap!important}
+  /* Business sections: keep the NEXT link clear of the last card row */
+  html:not(#_a):not(#_b) .business-copy{padding-bottom:clamp(36px,6vh,64px)!important}
+}

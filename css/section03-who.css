@@ -1,0 +1,1069 @@
+/* =========================================================
+   SECTION 03 — WHO WE ARE
+   Independent stylesheet. Home + Section 02 styles untouched.
+   ========================================================= */
+
+/* .who-section {
+  --gold: #f4d38a;
+  --gold-soft: rgba(242, 194, 95, .62);
+  --ink: #03070b;
+  position: relative;
+  min-height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 72% 48%, rgba(13, 50, 70, .28), transparent 30%),
+    radial-gradient(circle at 82% 70%, rgba(215, 159, 48, .11), transparent 28%),
+    linear-gradient(112deg, #020508 0%, #040a10 52%, #020408 100%);
+  color: #f4f1ea;
+} */
+
+.who-section {
+  --gold: #f4d38a;
+  --gold-soft: rgba(244, 211, 138, 0.62);
+  --ink: #03070b;
+
+  position: relative;
+  min-height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+
+  background:
+    radial-gradient(circle at 72% 48%, rgba(13, 50, 70, .18), transparent 30%),
+    radial-gradient(circle at 82% 70%, rgba(215, 159, 48, .08), transparent 28%),
+    linear-gradient(112deg, #020508 0%, #040a10 52%, #020408 100%);
+
+  color: #f4f1ea;
+}
+
+.who-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.24;
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.75) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 34% 32%, rgba(255, 255, 255, 0.55) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 62% 17%, rgba(255, 255, 255, 0.55) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 88% 31%, rgba(255, 255, 255, 0.5) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 72% 82%, rgba(255, 255, 255, 0.5) 0 1px, transparent 1.5px);
+  background-size:
+    15rem 12rem,
+    19rem 15rem,
+    23rem 18rem,
+    17rem 13rem,
+    21rem 17rem;
+}
+
+.who-noise {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.18;
+  background:
+    linear-gradient(90deg, transparent 0 52%, rgba(255, 255, 255, 0.025) 52.1% 52.2%, transparent 52.3%),
+    linear-gradient(0deg, transparent 0 72%, rgba(255, 255, 255, 0.02) 72.1% 72.2%, transparent 72.3%);
+}
+
+.who-grid {
+  position: relative;
+  z-index: 2;
+  width: min(1480px, 92vw);
+  min-height: 100svh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(27rem, 40%) minmax(0, 60%);
+  align-items: center;
+  gap: 1rem;
+  padding: 5.5rem 0 4.5rem;
+}
+
+.who-copy {
+  position: relative;
+  z-index: 8;
+  padding-left: 1.1rem;
+  max-width: 40rem;
+}
+
+.who-index {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.95rem;
+  margin-bottom: 2.2rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.28em;
+}
+
+.who-index span {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.who-index b {
+  color: rgba(245, 243, 238, 0.72);
+  font-weight: 500;
+}
+
+.who-kicker {
+  font-family: "Inter", sans-serif;
+  margin: 0 0 1.4rem;
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.34em;
+}
+
+.who-copy h2 {
+  margin: 0;
+  max-width: 35rem;
+  font-family: "Space Grotesk", Arial, sans-serif;
+  font-size: clamp(4rem, 5.25vw, 6.5rem);
+  line-height: 0.86;
+  letter-spacing: -0.055em;
+  font-weight: 500;
+}
+
+.who-copy h2 span,
+.who-copy h2 strong {
+  display: block;
+}
+
+.who-copy h2 span {
+  color: #f5f2ec;
+}
+
+.who-copy h2 strong {
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.who-rule {
+  width: 5.4rem;
+  height: 1px;
+  margin: 2.1rem 0 1.55rem;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.who-lead,
+.who-body {
+  font-family: "Inter", sans-serif;
+  max-width: 36rem;
+  margin: 0;
+  color: rgba(241, 241, 239, 0.86);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.who-body {
+  margin-top: 0.8rem;
+  color: rgba(241, 241, 239, 0.58);
+  font-size: 0.78rem;
+  max-width: 34rem;
+}
+
+.who-bottom {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+  margin-top: 2rem;
+}
+
+.who-stats {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.who-stats > div {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.who-stats strong {
+  color: var(--gold);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.who-stats span {
+  font-family: "Inter", sans-serif;
+  color: rgba(246, 244, 239, 0.68);
+  font-size: 0.47rem;
+  line-height: 1.4;
+  letter-spacing: 0.16em;
+}
+
+.who-stats i {
+  width: 1px;
+  height: 2rem;
+  background: rgba(244, 211, 138, 0.26);
+}
+
+.who-cta {
+  font-family: "Inter", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.95rem;
+  padding: 0.78rem 1.25rem;
+  border: 1px solid rgba(244, 211, 138, 0.72);
+  border-radius: 999px;
+  color: #f4d38a;
+  background: rgba(3, 7, 11, 0.55);
+  text-decoration: none;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+
+.who-cta span {
+  color: var(--gold);
+  font-size: 0.95rem;
+  transition: transform 0.3s ease;
+}
+
+.who-cta:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+  background: rgba(244, 211, 138, 0.09);
+  box-shadow: 0 0 1.4rem rgba(244, 211, 138, 0.13);
+}
+
+.who-cta:hover span {
+  transform: translateX(0.25rem);
+}
+
+.who-stage {
+  position: relative;
+  min-height: 41rem;
+  height: min(76vh, 47rem);
+  margin-right: -1.5rem;
+  perspective: 1000px;
+}
+
+.who-canopy {
+  position: absolute;
+  width: 52%;
+  height: 8rem;
+  left: 48%;
+  top: 1rem;
+  transform: translateX(-50%);
+  border: 1px solid rgba(244, 211, 138, 0.55);
+  border-bottom-color: rgba(244, 211, 138, 0.1);
+  border-radius: 50%;
+  box-shadow: 0 0 2rem rgba(244, 211, 138, 0.06);
+  opacity: 0.85;
+}
+
+.who-canopy::after {
+  content: "";
+  position: absolute;
+  inset: -1rem 13%;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+}
+
+.who-light-column {
+  position: absolute;
+  width: 28rem;
+  height: 30rem;
+  left: 52%;
+  top: 7rem;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse, rgba(242, 194, 95, 0.12), transparent 66%);
+  filter: blur(1rem);
+}
+
+.who-panel {
+  position: absolute;
+  z-index: 3;
+  top: 6rem;
+  width: 9.6rem;
+  height: 25rem;
+  padding: 1.35rem 1.15rem;
+  border: 1px solid rgba(66, 178, 255, 0.72);
+  background-color: #071019;
+  background-repeat: no-repeat;
+  isolation: isolate;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow:
+    0 1rem 3rem rgba(0, 0, 0, 0.36),
+    inset 0 0 2rem rgba(255, 255, 255, 0.025);
+  transform-style: preserve-3d;
+}
+
+.who-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(2, 5, 8, 0.68), rgba(2, 5, 8, 0.50) 42%, rgba(2, 5, 8, 0.84));
+  z-index: 0;
+}
+
+.who-panel::after {
+  content: "";
+  position: absolute;
+  inset: auto -20% -8% -20%;
+  height: 45%;
+  background: radial-gradient(ellipse, rgba(242, 194, 95, 0.14), transparent 66%);
+  filter: blur(1.1rem);
+  z-index: 1;
+}
+
+.who-panel-people {
+  left: 2%;
+  transform: perspective(900px) rotateY(14deg) rotateZ(-1.2deg);
+  background-image: url("../assets/who/people-bg.jpg");
+}
+
+.who-panel-tech {
+  left: 22%;
+  transform: perspective(900px) rotateY(8deg) rotateZ(0.4deg);
+  background-image: url("../assets/who/technology-bg.jpg");
+}
+
+.who-panel-business {
+  right: 22%;
+  transform: perspective(900px) rotateY(-8deg) rotateZ(-0.4deg);
+  background-image: url("../assets/who/business-bg.jpg");
+}
+
+.who-panel-possibility {
+  right: 2%;
+  transform: perspective(900px) rotateY(-14deg) rotateZ(1.2deg);
+  background-image: url("../assets/who/possibility-bg.jpg");
+}
+
+.who-panel-number {
+  font-family: "Inter", sans-serif;
+  position: relative;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.9);
+}
+
+.who-panel h3 {
+  font-family: "Space Grotesk", sans-serif;
+  position: relative;
+  z-index: 2;
+  margin: 0.75rem 0 0;
+  color: #f6f3ed;
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-align: center;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95);
+}
+
+.who-panel p {
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  z-index: 2;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1.5rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.52rem;
+  line-height: 1.65;
+  letter-spacing: 0.18em;
+  text-align: center;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95);
+}
+
+.who-core-wrap {
+  position: absolute;
+  z-index: 6;
+  left: 50%;
+  top: 50%;
+  width: 18.5rem;
+  height: 18.5rem;
+  transform: translate(-50%, -38%);
+}
+
+.who-core-halo {
+  position: absolute;
+  inset: -3.2rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(242, 194, 95, 0.18), rgba(242, 194, 95, 0.04) 40%, transparent 68%);
+  filter: blur(1rem);
+  animation: whoPulse 4.5s ease-in-out infinite;
+}
+
+.who-core {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #03070c;
+  box-shadow:
+    0 0 0 1px rgba(242, 194, 95, 0.35),
+    0 0 1.5rem rgba(242, 194, 95, 0.28),
+    0 1.5rem 4rem rgba(0, 0, 0, 0.6);
+}
+
+.who-core img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.who-core-shine {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(125deg, transparent 28%, rgba(255, 244, 200, 0.17) 45%, transparent 57%);
+  background-size: 220% 220%;
+  animation: whoShine 7s ease-in-out infinite;
+  mix-blend-mode: screen;
+}
+
+.who-platform {
+  position: absolute;
+  width: 125%;
+  height: 4.8rem;
+  left: 50%;
+  bottom: -1.8rem;
+  transform: translateX(-50%);
+  border: 1px solid rgba(242, 194, 95, 0.58);
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(244, 211, 138, 0.1), rgba(3, 7, 11, 0.55) 62%, transparent 72%);
+  box-shadow:
+    0 1.5rem 2rem rgba(0, 0, 0, 0.5),
+    inset 0 0 1.2rem rgba(242, 194, 95, 0.08);
+}
+
+.who-platform::before,
+.who-platform::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 74%;
+  height: 55%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(242, 194, 95, 0.3);
+  border-radius: 50%;
+}
+
+.who-platform::after {
+  width: 52%;
+  height: 38%;
+  opacity: 0.7;
+}
+
+.who-floor-line {
+  position: absolute;
+  z-index: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(242, 194, 95, 0.28), transparent);
+  transform-origin: left center;
+  opacity: 0.55;
+}
+
+.line-one {
+  width: 35rem;
+  left: 36%;
+  bottom: 7rem;
+  transform: rotate(8deg);
+}
+.line-two {
+  width: 29rem;
+  left: 46%;
+  bottom: 3.5rem;
+  transform: rotate(-5deg);
+}
+.line-three {
+  width: 20rem;
+  left: 56%;
+  bottom: 12rem;
+  transform: rotate(-18deg);
+  opacity: 0.32;
+}
+
+.who-scroll-mark {
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  z-index: 5;
+  left: 4vw;
+  bottom: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  color: rgba(245, 243, 238, 0.52);
+  font-size: 0.53rem;
+  letter-spacing: 0.25em;
+}
+
+.who-scroll-mark i {
+  width: 3.5rem;
+  height: 1px;
+  background: var(--gold);
+  box-shadow: 0 0 0.6rem rgba(242, 194, 95, 0.4);
+}
+
+@keyframes whoPulse {
+  0%,
+  100% {
+    transform: scale(0.97);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+
+@keyframes whoShine {
+  0%,
+  100% {
+    background-position: 120% 20%;
+    opacity: 0.25;
+  }
+  50% {
+    background-position: -10% 75%;
+    opacity: 0.75;
+  }
+}
+
+@media (max-width: 1200px) {
+  .who-grid {
+    grid-template-columns: 43% 57%;
+  }
+  .who-copy h2 {
+    font-size: clamp(3.6rem, 5.4vw, 5.4rem);
+  }
+  .who-stage {
+    transform: scale(0.9);
+    transform-origin: center right;
+    margin-right: -4rem;
+  }
+  .who-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+}
+
+/* Dedicated responsive pass will be done after all sections are complete. */
+
+/* ===== FINAL WHO WE ARE BACKGROUND CLEANUP =====
+   Keep the section's designed atmosphere, remove the photographic background. */
+.who-section {
+  background:
+    radial-gradient(circle at 72% 46%, rgba(13,50,70,.18), transparent 31%),
+    radial-gradient(circle at 82% 72%, rgba(215,159,48,.07), transparent 28%),
+    linear-gradient(112deg, #020508 0%, #040a10 52%, #020408 100%);
+}
+
+/* Section 03 header follows the same editorial rule as 05–10. */
+.who-index i{
+  display:block;
+  width:52px;
+  height:1px;
+  background:var(--gold);
+  box-shadow:0 0 10px rgba(242,194,95,.24);
+}
+
+/* FINAL HEADER ALIGNMENT — match Sections 01/02 left edge */
+@media (min-width: 901px){
+  .who-copy{padding-left:0;}
+}
+
+/* =========================================================
+   DESKTOP LEFT EDGE — MATCH SECTION 02
+   The editorial content starts at the same 4vw edge as
+   Our Universe. Do not introduce a centered/indented column.
+========================================================= */
+@media (min-width: 901px){
+  .who-grid{
+    width:92vw;
+    margin-left:4vw;
+    margin-right:0;
+  }
+  .who-copy{padding-left:0;}
+}
+
+/* =========================================================
+   FINAL DESKTOP BALANCE — MOVE RIGHT VISUAL TOWARD LEFT
+   Keep the left editorial edge unchanged. The right visual
+   must sit comfortably away from the global section pager.
+========================================================= */
+@media (min-width: 1201px){
+  .who-stage{
+    transform: translateX(-4.5vw);
+    margin-right: 0;
+  }
+}
+
+/* =========================================================
+   SECTION 03 — CHAMPAGNE LEFT / GOLD RIGHT VISUAL LOCK
+   Scope: WHO WE ARE only.
+   Left editorial accents are champagne.
+   Right-side orbital rings + panel borders remain original gold.
+   Home + Section 02 + global pager remain untouched.
+   ========================================================= */
+.who-section {
+  --gold: #f4d38a;
+  --gold-soft: rgba(244, 211, 138, 0.62);
+}
+
+/* LEFT SIDE — approved champagne accent */
+.who-index span,
+.who-kicker,
+.who-copy h2 strong,
+.who-stats strong,
+.who-cta span {
+  color: #f4d38a;
+}
+
+.who-rule,
+.who-index i {
+  background: linear-gradient(90deg, #f4d38a, transparent);
+  box-shadow: 0 0 10px rgba(244, 211, 138, 0.24);
+}
+
+.who-cta {
+  border-color: rgba(244, 211, 138, 0.72);
+  color: #f4d38a;
+}
+
+.who-cta:hover {
+  border-color: #f4d38a;
+  background: rgba(244, 211, 138, 0.09);
+  box-shadow: 0 0 1.4rem rgba(244, 211, 138, 0.13);
+}
+
+/* RIGHT SIDE — restore original warm gold visual treatment */
+.who-canopy {
+  border-color: rgba(244, 211, 138, 0.55);
+  border-bottom-color: rgba(242, 194, 95, 0.10);
+  box-shadow: 0 0 2rem rgba(244, 211, 138, 0.06);
+}
+
+.who-panel {
+  border-color: rgba(244, 211, 138, 0.72);
+}
+
+
+/* =========================================================
+   SECTION 03 — RESPONSIVE COMPOSITION PASS
+   Scope: .who-section only.
+   Desktop geometry above 1200px is preserved.
+   ========================================================= */
+
+@media (min-width: 1201px) and (max-width: 1650px) {
+  .who-grid {
+    width: 92vw;
+    grid-template-columns: minmax(28rem, 40%) minmax(0, 60%);
+    gap: 0.5rem;
+    padding-top: clamp(5rem, 7vh, 6rem);
+    padding-bottom: clamp(3.5rem, 6vh, 4.5rem);
+  }
+
+  .who-stage {
+    height: min(74vh, 45rem);
+    min-height: 38rem;
+    transform: translateX(clamp(-4.5vw, -2vw, -1.5vw));
+    margin-right: 0;
+  }
+
+  .who-panel {
+    width: clamp(8.3rem, 9vw, 9.6rem);
+    height: clamp(22rem, 38vh, 25rem);
+  }
+
+  .who-core-wrap {
+    width: clamp(15rem, 17vw, 18.5rem);
+    height: clamp(15rem, 17vw, 18.5rem);
+  }
+}
+
+/* Small laptop / tablet: move the composition into two deliberate rows.
+   This prevents the desktop stage from fighting the editorial copy. */
+@media (min-width: 821px) and (max-width: 1200px) {
+  .who-section {
+    overflow: hidden;
+  }
+
+  .who-grid {
+    width: min(94vw, 1000px);
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 6.2rem 0 4.5rem;
+    gap: 2.25rem;
+  }
+
+  .who-copy {
+    width: min(100%, 44rem);
+    max-width: 44rem;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .who-copy h2 {
+    max-width: 32rem;
+    font-size: clamp(3.5rem, 6.2vw, 5rem);
+  }
+
+  .who-lead,
+  .who-body {
+    max-width: 42rem;
+  }
+
+  .who-bottom {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .who-stage {
+    width: min(100%, 52rem);
+    height: 35rem;
+    min-height: 35rem;
+    margin: 0 auto;
+    transform: none;
+  }
+
+  .who-canopy {
+    width: 46%;
+    left: 50%;
+    top: 0.5rem;
+  }
+
+  .who-panel {
+    top: 5.25rem;
+    width: 7.25rem;
+    height: 20rem;
+  }
+
+  .who-panel-people { left: 3%; }
+  .who-panel-tech { left: 22%; }
+  .who-panel-business { right: 22%; }
+  .who-panel-possibility { right: 3%; }
+
+  .who-core-wrap {
+    width: 13.5rem;
+    height: 13.5rem;
+    top: 50%;
+    transform: translate(-50%, -40%);
+  }
+
+  .who-floor-line { opacity: 0.35; }
+}
+
+/* Tablet portrait: keep the core prominent and arrange the four pillars
+   as a controlled 2x2 composition below it. */
+@media (min-width: 601px) and (max-width: 820px) {
+  .who-section {
+    overflow: hidden;
+  }
+
+  .who-grid {
+    width: min(92vw, 700px);
+    margin: 0 auto;
+    display: block;
+    min-height: auto;
+    padding: 6rem 0 4.5rem;
+  }
+
+  .who-copy {
+    width: 100%;
+    max-width: 42rem;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .who-index { margin-bottom: 1.6rem; }
+  .who-kicker { margin-bottom: 1.1rem; }
+
+  .who-copy h2 {
+    max-width: 30rem;
+    font-size: clamp(3.1rem, 7.5vw, 4.4rem);
+  }
+
+  .who-lead { font-size: 0.92rem; }
+  .who-body { font-size: 0.75rem; }
+
+  .who-bottom {
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .who-stage {
+    width: 100%;
+    height: 43rem;
+    min-height: 43rem;
+    margin: 2rem auto 0;
+    transform: none;
+  }
+
+  .who-canopy,
+  .who-light-column,
+  .who-floor-line {
+    display: none;
+  }
+
+  .who-core-wrap {
+    width: 12rem;
+    height: 12rem;
+    left: 50%;
+    top: 1rem;
+    transform: translateX(-50%);
+  }
+
+  .who-panel {
+    top: 15rem;
+    width: clamp(8rem, 31vw, 10rem);
+    height: 18rem;
+  }
+
+  .who-panel-people { left: 4%; }
+  .who-panel-tech { right: 4%; left: auto; }
+  .who-panel-business { left: 4%; right: auto; top: 34rem; }
+  .who-panel-possibility { right: 4%; top: 34rem; }
+
+  .who-platform { width: 135%; }
+  .who-scroll-mark {
+    left: 4vw;
+    bottom: 1.2rem;
+  }
+}
+
+/* Phones: editorial copy first, then a clear MA core, then the four pillars.
+   The pillar cards become normal-flow grid items so spacing cannot drift. */
+@media (max-width: 600px) {
+  .who-section {
+    overflow: hidden;
+  }
+
+  .who-grid {
+    width: min(90vw, 420px);
+    margin: 0 auto;
+    display: block;
+    min-height: auto;
+    padding: 5.5rem 0 4.5rem;
+  }
+
+  .who-copy {
+    width: 100%;
+    max-width: none;
+    padding-left: 0;
+  }
+
+  .who-index {
+    gap: 0.7rem;
+    margin-bottom: 1.35rem;
+    font-size: 0.58rem;
+  }
+
+  .who-kicker {
+    margin-bottom: 1rem;
+    font-size: 0.58rem;
+    letter-spacing: 0.24em;
+  }
+
+  .who-copy h2 {
+    max-width: 100%;
+    font-size: clamp(2.7rem, 12vw, 4rem);
+    line-height: 0.9;
+    letter-spacing: -0.045em;
+  }
+
+  .who-rule {
+    width: 4rem;
+    margin: 1.5rem 0 1.15rem;
+  }
+
+  .who-lead {
+    max-width: none;
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  .who-body {
+    max-width: none;
+    margin-top: 0.65rem;
+    font-size: 0.72rem;
+    line-height: 1.55;
+  }
+
+  .who-bottom {
+    margin-top: 1.35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .who-stats {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.6rem;
+  }
+
+  .who-stats > div { gap: 0.3rem; }
+  .who-stats strong { font-size: 1.65rem; }
+  .who-stats span { font-size: 0.4rem; }
+  .who-stats i { height: 1.5rem; }
+
+  .who-stage {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin: 2rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    transform: none;
+    perspective: none;
+  }
+
+  .who-canopy,
+  .who-light-column,
+  .who-floor-line,
+  .who-scroll-mark {
+    display: none;
+  }
+
+  .who-core-wrap {
+    position: relative;
+    left: auto;
+    top: auto;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: clamp(10rem, 42vw, 13rem);
+    height: clamp(10rem, 42vw, 13rem);
+    margin: 0 auto 1rem;
+    transform: none;
+  }
+
+  .who-platform { width: 135%; }
+
+  .who-panel {
+    position: relative;
+    inset: auto !important;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+    height: clamp(15rem, 62vw, 18rem);
+    padding: 1rem 0.8rem;
+    transform: none !important;
+    border-color: rgba(244, 211, 138, 0.72);
+  }
+
+  .who-panel-people { grid-column: 1; grid-row: 2; }
+  .who-panel-tech { grid-column: 2; grid-row: 2; }
+  .who-panel-business { grid-column: 1; grid-row: 3; }
+  .who-panel-possibility { grid-column: 2; grid-row: 3; }
+
+  .who-panel h3 {
+    margin-top: 0.65rem;
+    font-size: 0.62rem;
+  }
+
+  .who-panel p {
+    left: 0.65rem;
+    right: 0.65rem;
+    bottom: 1rem;
+    font-size: 0.46rem;
+    line-height: 1.5;
+  }
+}
+
+/* Very narrow phones: one pillar per row keeps the artwork readable and
+   prevents the cards from becoming cramped. */
+@media (max-width: 420px) {
+  .who-grid {
+    width: min(88vw, 360px);
+  }
+
+  .who-copy h2 {
+    font-size: clamp(2.45rem, 13vw, 3.3rem);
+  }
+
+  .who-stage {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .who-core-wrap {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 0.75rem;
+  }
+
+  .who-panel {
+    height: 19rem;
+  }
+
+  .who-panel-people { grid-column: 1; grid-row: 2; }
+  .who-panel-tech { grid-column: 1; grid-row: 3; }
+  .who-panel-business { grid-column: 1; grid-row: 4; }
+  .who-panel-possibility { grid-column: 1; grid-row: 5; }
+}
+
+
+/* =========================================================
+   SECTION 03 — RESPONSIVE CORRECTION PASS 02
+   ONLY affects .who-section.  Do not alter the global pager.
+   ========================================================= */
+
+/* 1201–1650: reserve the fixed pager's full visual lane. */
+@media (min-width: 1201px) and (max-width: 1700px) {
+  .who-grid {
+    grid-template-columns: minmax(28rem, 40%) minmax(0, calc(60% - 9rem));
+    column-gap: 0.5rem;
+  }
+
+  .who-stage {
+    width: 100%;
+    margin-right: 0;
+    transform: translateX(-1.5vw);
+  }
+}
+
+/* 821–1200: the fixed pager remains visible, so the visual stage gets
+   an explicit right-side exclusion zone instead of allowing card 04
+   to occupy the pager lane. */
+@media (min-width: 821px) and (max-width: 1200px) {
+  .who-stage {
+    width: min(calc(100% - 7.875rem), 48rem);
+    margin-left: 0;
+    margin-right: auto;
+    transform: none;
+  }
+}
+
+/* 601–820: the lower pair of pillars must fit inside the stage itself.
+   The scroll cue belongs after the stage, not over its lower cards. */
+@media (min-width: 601px) and (max-width: 820px) {
+  .who-stage {
+    height: 53rem;
+    min-height: 53rem;
+  }
+
+  .who-scroll-mark {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: fit-content;
+    margin: 0 0 2.25rem 4vw;
+  }
+}

@@ -1,0 +1,1599 @@
+/* =========================================================
+   SECTION 05 — TECHNOLOGY
+   Deliberately different composition from Vision.
+   Desktop-first; responsive pass comes later.
+========================================================= */
+.technology-section{
+  font-family:"Inter",sans-serif;
+  --tech-gold:#efc66c;
+  --tech-blue:#55bfff;
+  --tech-white:#f3f0e9;
+  position:relative;
+  min-height:100svh;
+  overflow:hidden;
+  isolation:isolate;
+  background:#010509;
+  color:var(--tech-white);
+}
+.technology-bg{position:absolute;inset:0;z-index:-5;background:url("../assets/technology-bg.jpg") center/cover no-repeat;filter:brightness(.48) saturate(.88);transform:scale(1.025)}
+.technology-vignette{position:absolute;inset:0;z-index:-4;background:linear-gradient(90deg,rgba(1,5,9,.98) 0%,rgba(1,5,9,.96) 21%,rgba(1,5,9,.45) 43%,rgba(1,5,9,.08) 68%,rgba(1,5,9,.22) 100%),linear-gradient(180deg,rgba(0,0,0,.42),transparent 35%,rgba(0,0,0,.48))}
+.technology-stars{position:absolute;inset:0;z-index:-3;opacity:.45;background-image:radial-gradient(circle,rgba(255,255,255,.65) 0 1px,transparent 1.5px);background-size:180px 180px;mix-blend-mode:screen}
+.technology-shell{width:min(1480px,92vw);min-height:100svh;margin:0 auto;position:relative;padding:0 0 40px}
+.technology-header{position:absolute;left:0;right:0;top:42px;display:flex;align-items:center;justify-content:space-between;z-index:10}
+.technology-index{display:flex;align-items:center;gap:16px;font:500 11px/1 "Space Grotesk",sans-serif;letter-spacing:.30em;color:rgba(255,255,255,.66)}
+.technology-index span{color:var(--tech-gold);font-weight:700;letter-spacing:.12em}.technology-index i{display:block;width:52px;height:1px;background:rgba(242,201,111,.78);box-shadow:0 0 12px rgba(242,201,111,.25)}
+.technology-brand{font:500 10px/1 "Space Grotesk",sans-serif;letter-spacing:.28em;color:rgba(255,255,255,.62)}
+.technology-stage{position:relative;min-height:100svh;padding-top:106px;display:grid;grid-template-columns:37% 63%;align-items:center}
+.technology-copy{position:relative;z-index:8;max-width:530px;padding-left:1.8vw;margin-top:28px}
+.technology-kicker{margin:0 0 18px;color:var(--tech-gold);font:600 11px/1 "Space Grotesk",sans-serif;letter-spacing:.28em}
+.technology-copy h2{margin:0;font:500 clamp(52px,5.25vw,82px)/.88 "Space Grotesk",sans-serif;letter-spacing:-.045em;max-width:570px}
+.technology-copy h2 span,.technology-copy h2 strong{display:block}.technology-copy h2 strong{color:var(--tech-gold);font-weight:500}
+.technology-rule{width:72px;height:1px;background:#f2c96f;margin:28px 0 18px;box-shadow:0 0 14px rgba(242,201,111,.42)}
+.technology-lead{max-width:460px;margin:0 0 28px;color:rgba(239,242,243,.68);font-size:13px;line-height:1.75}
+.technology-cta{display:inline-flex;align-items:center;gap:14px;height:46px;padding:0 20px;border:1px solid rgba(239,198,108,.78);border-radius:999px;color:var(--tech-gold);text-decoration:none;font:600 10px/1 "Space Grotesk",sans-serif;letter-spacing:.15em;transition:.3s ease}
+.technology-cta:hover{background:var(--tech-gold);color:#090806;transform:translateY(-2px)}
+.technology-cta b{font-size:15px}
+.technology-core-system{position:relative;width:min(760px,100%);height:min(720px,78vh);justify-self:end;z-index:4;margin-right:3.5vw;margin-top:15px}
+.tech-ring{position:absolute;left:50%;top:48%;border:1px solid rgba(84,188,255,.28);border-radius:50%;transform-origin:center;pointer-events:none}
+.ring-one{width:520px;height:520px;margin:-260px 0 0 -260px;transform:rotate(18deg) rotateX(65deg);border-color:rgba(239,198,108,.35)}
+.ring-two{width:620px;height:300px;margin:-150px 0 0 -310px;transform:rotate(-24deg);border-color:rgba(84,188,255,.24)}
+.ring-three{width:420px;height:650px;margin:-325px 0 0 -210px;transform:rotate(55deg);border-color:rgba(239,198,108,.24)}
+.ring-four{width:670px;height:185px;margin:-92px 0 0 -335px;transform:rotate(8deg);border-color:rgba(255,255,255,.10)}
+.tech-energy{position:absolute;left:50%;top:48%;border-radius:50%;pointer-events:none;filter:blur(1px)}
+.energy-a{width:520px;height:520px;margin:-260px 0 0 -260px;background:radial-gradient(circle,transparent 58%,rgba(239,198,108,.08) 59%,transparent 63%)}
+.energy-b{width:410px;height:410px;margin:-205px 0 0 -205px;background:radial-gradient(circle,transparent 65%,rgba(85,191,255,.08) 66%,transparent 70%)}
+.tech-core-halo{position:absolute;left:50%;top:48%;width:330px;height:330px;margin:-165px 0 0 -165px;border-radius:50%;background:radial-gradient(circle,rgba(239,198,108,.20),rgba(85,191,255,.08) 44%,transparent 70%);filter:blur(24px);z-index:0}
+.tech-core{position:absolute;left:50%;top:48%;width:292px;height:292px;margin:-146px 0 0 -146px;border-radius:50%;z-index:5;filter:drop-shadow(0 0 26px rgba(239,198,108,.22));}
+.tech-core img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;filter:saturate(.92) contrast(1.08) brightness(.92)}
+.tech-core-glass{position:absolute;inset:8px;border-radius:50%;border:1px solid rgba(255,255,255,.30);box-shadow:inset 0 0 35px rgba(255,255,255,.08),0 0 0 1px rgba(239,198,108,.18)}
+.tech-connectors{position:absolute;inset:0;width:100%;height:100%;z-index:2;overflow:visible;pointer-events:none}
+.tech-connectors path{fill:none;stroke:rgba(85,191,255,.50);stroke-width:1;filter:drop-shadow(0 0 5px rgba(85,191,255,.25))}
+.tech-node{position:absolute;z-index:7;display:flex;align-items:center;gap:13px;width:205px}
+.tech-node-icon{width:66px;height:66px;flex:0 0 66px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.10),rgba(3,10,16,.88) 58%);border:1px solid rgba(239,198,108,.55);box-shadow:inset 0 0 20px rgba(85,191,255,.06),0 0 18px rgba(239,198,108,.08)}
+.tech-node-icon span{font:400 25px/1 "Space Grotesk";color:var(--tech-blue);text-shadow:0 0 12px rgba(85,191,255,.65)}
+.tech-node b{display:block;font:700 10px/1.15 "Space Grotesk";letter-spacing:.13em;color:#f4f0e8}.tech-node small{display:block;margin-top:7px;color:rgba(255,255,255,.47);font:500 8px/1.4 "Inter";letter-spacing:.10em}
+.tech-node-ai{left:1%;top:18%}.tech-node-cloud{left:2%;bottom:19%}.tech-node-security{right:1%;top:18%}.tech-node-integration{right:0%;bottom:19%}
+.technology-platform{position:absolute;left:50%;bottom:6%;width:480px;height:70px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(ellipse,rgba(85,191,255,.13),transparent 62%);border:1px solid rgba(239,198,108,.34);box-shadow:0 0 35px rgba(239,198,108,.12);z-index:1}
+.technology-platform:before,.technology-platform:after{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;border:1px solid rgba(85,191,255,.20)}
+.technology-platform:before{width:72%;height:55%}.technology-platform:after{width:43%;height:32%}
+.technology-side-note{position:absolute;right:0;bottom:12%;width:220px;z-index:9}.technology-side-line{display:block;width:54px;height:1px;background:var(--tech-gold);margin-bottom:14px}.technology-side-note p{margin:0;color:rgba(255,255,255,.50);font-size:10px;line-height:1.65}
+.technology-scroll{position:absolute;left:0;bottom:30px;display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.44);font-size:9px;letter-spacing:.28em;z-index:10}.technology-scroll i{display:block;width:48px;height:1px;background:#f2c96f;box-shadow:0 0 8px rgba(242,201,111,.40)}
+@media (max-width:1200px){.technology-stage{grid-template-columns:39% 61%}.technology-copy h2{font-size:clamp(48px,5.5vw,70px)}.technology-core-system{margin-right:1vw}.tech-node{width:185px}.tech-node-icon{width:58px;height:58px;flex-basis:58px}.ring-one{width:470px;height:470px;margin:-235px 0 0 -235px}.ring-two{width:560px}.ring-three{height:580px}.tech-core{width:260px;height:260px;margin:-130px 0 0 -130px}}
+@media (max-width:820px){.technology-section{min-height:900px}.technology-header{top:28px}.technology-stage{grid-template-columns:1fr;padding-top:100px}.technology-copy{padding-left:0;margin:0;max-width:520px}.technology-core-system{height:560px;width:100%;margin:30px 0 0}.technology-side-note{display:none}.technology-scroll{display:none}.technology-node{transform:scale(.86)}.tech-node-ai{left:0;top:10%}.tech-node-cloud{left:0;bottom:12%}.tech-node-security{right:0;top:10%}.tech-node-integration{right:0;bottom:12%}}
+
+/* ---- Technology final desktop composition ---- */
+.technology-bg{
+  background-position:center right;
+  filter:brightness(.34) saturate(.82) contrast(1.06);
+  transform:scale(1.03);
+}
+.technology-vignette{
+  background:
+    linear-gradient(90deg,
+      rgba(1,5,9,.995) 0%,
+      rgba(1,5,9,.98) 24%,
+      rgba(1,5,9,.76) 39%,
+      rgba(1,5,9,.28) 57%,
+      rgba(1,5,9,.10) 78%,
+      rgba(1,5,9,.30) 100%),
+    linear-gradient(180deg,rgba(0,0,0,.56),transparent 32%,rgba(0,0,0,.62));
+}
+.technology-stage{
+  grid-template-columns:36% 64%;
+}
+.technology-copy{
+  max-width:500px;
+  padding-left:1.8vw;
+  margin-top:22px;
+}
+.technology-copy h2{
+  max-width:510px;
+  font-size:clamp(48px,4.55vw,76px);
+  line-height:.91;
+}
+.technology-lead{max-width:410px;font-size:12px;line-height:1.7}
+.technology-core-system{
+  width:min(800px,100%);
+  height:min(720px,78vh);
+  margin-right:1.5vw;
+  margin-top:8px;
+}
+.tech-core-halo{width:300px;height:300px;margin:-150px 0 0 -150px}
+.tech-core{width:270px;height:270px;margin:-135px 0 0 -135px}
+.tech-node{width:188px;gap:10px}
+.tech-node-icon{width:58px;height:58px;flex-basis:58px}
+.tech-node b{font-size:9px}
+.tech-node small{font-size:7px;line-height:1.35}
+.tech-node-ai{left:0;top:16%}
+.tech-node-cloud{left:1%;bottom:17%}
+.tech-node-security{right:0;top:16%}
+.tech-node-integration{right:0;bottom:17%}
+.technology-platform{width:430px;bottom:7%}
+
+@media (max-width:1200px){
+  .technology-stage{grid-template-columns:39% 61%}
+  .technology-copy h2{font-size:clamp(45px,5vw,68px)}
+  .technology-core-system{margin-right:0}
+}
+
+/* =========================================================
+   TECHNOLOGY CORE — SINGLE CIRCLE / REFERENCE ANIMATION
+   Adapted directly from the supplied Dreadlocks Sahibaa circle code.
+   One visible circle only; no concentric core borders.
+========================================================= */
+.technology-brand{display:none!important}
+.tech-core{
+  width:292px;
+  height:292px;
+  margin:-146px 0 0 -146px;
+  border-radius:50%;
+  position:absolute;
+  overflow:visible;
+  background:radial-gradient(circle at 50% 38%, rgba(35,54,68,.52) 0%, rgba(4,9,14,.96) 56%, #02050a 100%);
+  border:1px solid rgba(239,198,108,.38);
+  box-shadow:0 0 32px rgba(239,198,108,.14), inset 0 0 45px rgba(85,191,255,.08);
+  filter:none;
+  z-index:5;
+}
+
+/* Moving highlight: same conic-gradient + masked perimeter technique supplied by user. */
+.tech-core::before{
+  content:"";
+  position:absolute;
+  inset:-3px;
+  border-radius:50%;
+  background:conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 40deg,
+    rgba(255,255,255,1) 55deg,
+    rgba(255,255,255,.9) 65deg,
+    transparent 80deg,
+    transparent 180deg,
+    rgba(255,255,255,1) 210deg,
+    rgba(255,255,255,.9) 225deg,
+    transparent 245deg
+  );
+  -webkit-mask:radial-gradient(farthest-side, transparent calc(100% - 4px), #fff calc(100% - 4px));
+  mask:radial-gradient(farthest-side, transparent calc(100% - 4px), #fff calc(100% - 4px));
+  filter:drop-shadow(0 0 6px rgba(255,255,255,.8)) drop-shadow(0 0 12px rgba(255,255,255,.5));
+  animation:techCoreRotateGlow 12s linear infinite;
+  pointer-events:none;
+  z-index:3;
+}
+
+/* The only static circle edge. */
+.tech-core::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,.15);
+  box-shadow:inset 0 0 30px rgba(255,255,255,.04), 0 0 25px rgba(255,255,255,.08);
+  pointer-events:none;
+  z-index:2;
+}
+
+@keyframes techCoreRotateGlow{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+
+.tech-core-disc{
+  position:absolute;
+  inset:0;
+  border-radius:50%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:transparent;
+  z-index:4;
+}
+
+.tech-core-arc{display:none!important}
+.tech-core-eyebrow{
+  margin-bottom:7px;
+  color:rgba(255,255,255,.54);
+  font:600 7px/1 "Space Grotesk",sans-serif;
+  letter-spacing:.24em;
+}
+.tech-core-ma{
+  color:var(--tech-gold);
+  font:500 50px/.9 "Space Grotesk",sans-serif;
+  letter-spacing:-.08em;
+}
+.tech-core-brand{
+  margin-top:7px;
+  color:#f4f1ea;
+  font:600 8px/1 "Space Grotesk",sans-serif;
+  letter-spacing:.28em;
+  padding-left:.28em;
+}
+.tech-core-disc p{
+  margin:13px 0 0;
+  color:rgba(255,255,255,.34);
+  font:500 6px/1.3 "Inter",sans-serif;
+  letter-spacing:.16em;
+}
+.technology-index{margin:0}
+.technology-header{top:42px}
+
+@media (max-width:1200px){
+  .tech-core{width:260px;height:260px;margin:-130px 0 0 -130px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .tech-core::before{animation:none}
+}
+
+/* FINAL HEADER ALIGNMENT — keep Section 05 header on the same left edge */
+@media (min-width: 901px){
+  .technology-header{left:0;}
+}
+
+/* =========================================================
+   DESKTOP LEFT EDGE — MATCH SECTION 02
+========================================================= */
+@media (min-width: 901px){
+  .technology-shell{
+    width:92vw;
+    margin-left:4vw;
+    margin-right:0;
+  }
+  .technology-copy{padding-left:0;}
+}
+
+/* =========================================================
+   FINAL DESKTOP BALANCE — MOVE TECHNOLOGY VISUAL LEFT
+   Keep the left copy/header unchanged and create clear air
+   between the visual system and the global right pager.
+========================================================= */
+@media (min-width: 1201px){
+  .technology-core-system{
+    transform: translateX(-4.5vw);
+    margin-right: 0;
+  }
+}
+
+/* =========================================================
+   TECHNOLOGY — GLASS INTELLIGENCE CARDS
+   Replace the four small circular nodes with premium glass
+   panels while preserving the existing core/orbit layout.
+========================================================= */
+.tech-node{
+  width:242px;
+  min-height:88px;
+  box-sizing:border-box;
+  padding:14px 16px;
+  display:grid;
+  grid-template-columns:42px minmax(0,1fr);
+  align-items:center;
+  gap:13px;
+  border:1px solid rgba(255,255,255,.20);
+  border-radius:16px;
+  background:
+    linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,255,255,.035) 42%,rgba(2,8,15,.58) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.14),
+    inset 0 0 26px rgba(85,191,255,.035),
+    0 10px 34px rgba(0,0,0,.28),
+    0 0 22px rgba(85,191,255,.055);
+  backdrop-filter:blur(14px) saturate(125%);
+  -webkit-backdrop-filter:blur(14px) saturate(125%);
+  overflow:hidden;
+  transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease,background .35s ease;
+}
+.tech-node::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  pointer-events:none;
+  background:linear-gradient(115deg,rgba(255,255,255,.12),transparent 28%,transparent 68%,rgba(85,191,255,.07));
+  opacity:.7;
+}
+.tech-node::after{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:52%;
+  height:1px;
+  background:linear-gradient(90deg,rgba(239,198,108,.9),rgba(85,191,255,.7),transparent);
+  box-shadow:0 0 9px rgba(85,191,255,.28);
+}
+.tech-node:hover{
+  transform:translateY(-4px);
+  border-color:rgba(239,198,108,.55);
+  background:linear-gradient(135deg,rgba(255,255,255,.15),rgba(255,255,255,.045) 42%,rgba(2,8,15,.62));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.18),
+    0 14px 38px rgba(0,0,0,.34),
+    0 0 28px rgba(239,198,108,.10),
+    0 0 18px rgba(85,191,255,.08);
+}
+.tech-node-icon{
+  position:relative;
+  z-index:1;
+  width:42px;
+  height:42px;
+  flex:none;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(145deg,rgba(239,198,108,.16),rgba(85,191,255,.07));
+  border:1px solid rgba(239,198,108,.45);
+  box-shadow:inset 0 0 18px rgba(85,191,255,.08),0 0 14px rgba(239,198,108,.07);
+}
+.tech-node-icon span{
+  color:#f2c968;
+  font:500 19px/1 "Space Grotesk",sans-serif;
+  text-shadow:0 0 12px rgba(239,198,108,.55);
+}
+.tech-node > div:last-child{
+  position:relative;
+  z-index:1;
+  min-width:0;
+}
+.tech-node b{
+  display:block;
+  color:#f5f1e8;
+  font:700 10px/1.15 "Space Grotesk",sans-serif;
+  letter-spacing:.12em;
+  white-space:nowrap;
+}
+.tech-node small{
+  display:block;
+  margin-top:7px;
+  color:rgba(255,255,255,.54);
+  font:500 7px/1.45 "Inter",sans-serif;
+  letter-spacing:.085em;
+}
+
+/* Give each card a restrained identity without changing the page palette. */
+.tech-node-ai{--card-accent:#55bfff;}
+.tech-node-cloud{--card-accent:#55bfff;}
+.tech-node-security{--card-accent:#efc66c;}
+.tech-node-integration{--card-accent:#efc66c;}
+.tech-node .tech-node-icon{border-color:color-mix(in srgb,var(--card-accent) 58%,rgba(255,255,255,.3));}
+.tech-node .tech-node-icon span{color:var(--card-accent);text-shadow:0 0 12px color-mix(in srgb,var(--card-accent) 65%,transparent);}
+
+@media (max-width:1200px){
+  .tech-node{width:218px;min-height:82px;padding:12px 13px;grid-template-columns:38px minmax(0,1fr);gap:11px}
+  .tech-node-icon{width:38px;height:38px;border-radius:11px}
+  .tech-node-icon span{font-size:17px}
+  .tech-node b{font-size:9px}
+}
+
+@media (max-width:820px){
+  .tech-node{width:205px;min-height:78px;padding:11px 12px;border-radius:14px;transform:scale(.92)}
+  .tech-node:hover{transform:translateY(-3px) scale(.92)}
+  .tech-node small{font-size:6.5px}
+}
+
+
+/* =========================================================
+   TECHNOLOGY — FINAL HOLOGRAPHIC DATA BEACONS
+   Four lightweight floating nodes replace the rectangular
+   glass cards. Core, background, typography, pager and all
+   other sections remain unchanged.
+========================================================= */
+.tech-node{
+  width:238px;
+  min-height:68px;
+  padding:0;
+  display:grid;
+  grid-template-columns:58px minmax(0,1fr);
+  align-items:center;
+  gap:13px;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+  overflow:visible;
+  transition:transform .35s ease,opacity .35s ease;
+}
+.tech-node::before{
+  content:"";
+  position:absolute;
+  left:17px;
+  top:50%;
+  width:76px;
+  height:76px;
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(85,191,255,.12),rgba(85,191,255,.035) 42%,transparent 72%);
+  filter:blur(3px);
+  pointer-events:none;
+  opacity:.9;
+}
+.tech-node::after{
+  content:"";
+  position:absolute;
+  left:70px;
+  right:0;
+  top:50%;
+  height:1px;
+  transform:translateY(18px);
+  background:linear-gradient(90deg,
+    color-mix(in srgb,var(--card-accent) 70%,transparent),
+    rgba(255,255,255,.14) 38%,
+    transparent 100%);
+  box-shadow:0 0 9px color-mix(in srgb,var(--card-accent) 30%,transparent);
+  opacity:.75;
+}
+.tech-node:hover{
+  transform:translateY(-4px);
+  border:0;
+  background:transparent;
+  box-shadow:none;
+}
+.tech-node-icon{
+  position:relative;
+  z-index:2;
+  width:58px;
+  height:58px;
+  flex:none;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:
+    radial-gradient(circle at 34% 28%,rgba(255,255,255,.16),rgba(6,13,20,.90) 58%),
+    linear-gradient(145deg,rgba(239,198,108,.08),rgba(85,191,255,.05));
+  border:1px solid color-mix(in srgb,var(--card-accent) 72%,rgba(255,255,255,.25));
+  box-shadow:
+    inset 0 0 20px rgba(255,255,255,.05),
+    0 0 18px color-mix(in srgb,var(--card-accent) 20%,transparent);
+}
+.tech-node-icon::before{
+  content:"";
+  position:absolute;
+  inset:6px;
+  border-radius:50%;
+  border:1px solid color-mix(in srgb,var(--card-accent) 35%,transparent);
+  opacity:.8;
+}
+.tech-node-icon span{
+  position:relative;
+  z-index:2;
+  color:var(--card-accent);
+  font:500 20px/1 "Space Grotesk",sans-serif;
+  text-shadow:0 0 14px color-mix(in srgb,var(--card-accent) 65%,transparent);
+}
+.tech-node > div:last-child{
+  position:relative;
+  z-index:2;
+  min-width:0;
+  padding:7px 0 10px 2px;
+}
+.tech-node b{
+  display:block;
+  color:#f5f1e8;
+  font:700 10px/1.15 "Space Grotesk",sans-serif;
+  letter-spacing:.14em;
+  white-space:nowrap;
+  text-shadow:0 0 12px rgba(0,0,0,.75);
+}
+.tech-node small{
+  display:block;
+  margin-top:6px;
+  color:rgba(255,255,255,.50);
+  font:500 7px/1.45 "Inter",sans-serif;
+  letter-spacing:.085em;
+  white-space:nowrap;
+}
+.tech-node-ai{--card-accent:#55bfff;}
+.tech-node-cloud{--card-accent:#55bfff;}
+.tech-node-security{--card-accent:#efc66c;}
+.tech-node-integration{--card-accent:#efc66c;}
+
+@media (max-width:1200px){
+  .tech-node{
+    width:218px;
+    min-height:62px;
+    grid-template-columns:52px minmax(0,1fr);
+    gap:11px;
+  }
+  .tech-node-icon{width:52px;height:52px}
+  .tech-node-icon span{font-size:18px}
+  .tech-node b{font-size:9px}
+  .tech-node small{font-size:6.5px}
+}
+@media (max-width:820px){
+  .tech-node{
+    width:205px;
+    min-height:58px;
+    grid-template-columns:48px minmax(0,1fr);
+    gap:10px;
+    transform:scale(.92);
+  }
+  .tech-node:hover{transform:translateY(-3px) scale(.92)}
+  .tech-node-icon{width:48px;height:48px}
+  .tech-node small{font-size:6px}
+}
+
+/* FINAL VISIBILITY FIX — technology nodes must remain visible on local/file preview.
+   Their reveal animation is decorative only and must never leave the capability
+   modules hidden if ScrollTrigger has not initialized yet. */
+.tech-node{
+  opacity:1 !important;
+  visibility:visible !important;
+  transform:none !important;
+}
+.tech-node:hover{transform:translateY(-4px) !important;}
+
+/* =========================================================
+   TECHNOLOGY — LARGE CINEMATIC NODE PRESENTATION
+   Final desktop treatment: substantial holographic panels,
+   large node icons, and stronger core connections.
+========================================================= */
+@media (min-width:821px){
+  .technology-core-system{
+    width:min(820px,100%);
+    height:min(740px,80vh);
+    margin-right:0;
+  }
+
+  .tech-node{
+    width:320px;
+    min-height:104px;
+    padding:15px 18px;
+    display:grid;
+    grid-template-columns:88px minmax(0,1fr);
+    align-items:center;
+    gap:16px;
+    border:1px solid rgba(239,198,108,.52);
+    border-radius:16px;
+    background:
+      linear-gradient(135deg,rgba(8,18,27,.90),rgba(3,8,14,.68) 62%,rgba(10,19,27,.50));
+    box-shadow:
+      inset 0 0 24px rgba(85,191,255,.045),
+      0 0 20px rgba(239,198,108,.08),
+      0 12px 35px rgba(0,0,0,.28);
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+    overflow:visible;
+  }
+
+  .tech-node::before{
+    content:"";
+    position:absolute;
+    inset:-1px;
+    border-radius:16px;
+    background:linear-gradient(90deg,
+      transparent 0%,
+      rgba(85,191,255,.10) 28%,
+      transparent 54%,
+      rgba(239,198,108,.13) 82%,
+      transparent 100%);
+    pointer-events:none;
+    z-index:0;
+  }
+
+  .tech-node::after{
+    content:"";
+    position:absolute;
+    left:22px;
+    right:22px;
+    bottom:9px;
+    height:1px;
+    background:linear-gradient(90deg,transparent,var(--card-accent),transparent);
+    box-shadow:0 0 10px var(--card-accent);
+    opacity:.5;
+    pointer-events:none;
+  }
+
+  .tech-node-icon{
+    width:88px;
+    height:88px;
+    flex:none;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    position:relative;
+    z-index:2;
+    background:
+      radial-gradient(circle at 35% 28%,rgba(255,255,255,.17),rgba(5,13,20,.88) 55%,rgba(2,6,10,.98));
+    border:2px solid color-mix(in srgb,var(--card-accent) 82%,rgba(255,255,255,.25));
+    box-shadow:
+      inset 0 0 22px rgba(255,255,255,.055),
+      0 0 18px color-mix(in srgb,var(--card-accent) 35%,transparent),
+      0 0 42px color-mix(in srgb,var(--card-accent) 12%,transparent);
+  }
+
+  .tech-node-icon::before{
+    content:"";
+    position:absolute;
+    inset:7px;
+    border-radius:50%;
+    border:1px solid color-mix(in srgb,var(--card-accent) 48%,transparent);
+    box-shadow:0 0 12px color-mix(in srgb,var(--card-accent) 18%,transparent);
+  }
+
+  .tech-node-icon span{
+    position:relative;
+    z-index:2;
+    font:400 31px/1 "Space Grotesk",sans-serif;
+    color:var(--card-accent);
+    text-shadow:0 0 15px color-mix(in srgb,var(--card-accent) 75%,transparent);
+  }
+
+  .tech-node > div:last-child{
+    position:relative;
+    z-index:2;
+    padding:0 2px;
+  }
+
+  .tech-node b{
+    display:block;
+    color:#f7f3ea;
+    font:700 15px/1.15 "Space Grotesk",sans-serif;
+    letter-spacing:.095em;
+    white-space:nowrap;
+    text-shadow:0 0 14px rgba(0,0,0,.8);
+  }
+
+  .tech-node small{
+    display:block;
+    margin-top:8px;
+    color:rgba(255,255,255,.58);
+    font:500 9px/1.45 "Inter",sans-serif;
+    letter-spacing:.095em;
+    white-space:nowrap;
+  }
+
+  .tech-node-ai{left:3%;top:10%;--card-accent:#55bfff}
+  .tech-node-security{right:3%;top:10%;--card-accent:#efc66c}
+  .tech-node-cloud{left:3%;bottom:10%;--card-accent:#55bfff}
+  .tech-node-integration{right:3%;bottom:10%;--card-accent:#efc66c}
+
+  .tech-node:hover{transform:translateY(-4px);}
+
+  .tech-connectors{z-index:2}
+  .tech-connectors path{
+    stroke-width:2.2;
+    stroke:rgba(85,191,255,.72);
+    filter:drop-shadow(0 0 7px rgba(85,191,255,.55));
+  }
+  .tech-node-security + .tech-node + .tech-node + .tech-node{}
+
+  .technology-core-system .tech-core-halo{
+    width:350px;
+    height:350px;
+    margin:-175px 0 0 -175px;
+  }
+  .technology-core-system .tech-core{
+    width:300px;
+    height:300px;
+    margin:-150px 0 0 -150px;
+  }
+}
+
+
+/* =========================================================
+   TECHNOLOGY — FINAL 16:9 VIDEO + DOUBLE GLASS FRAME
+   The fixed global 01–10 pager is intentionally untouched.
+========================================================= */
+.technology-stage{
+  grid-template-columns:minmax(0, 42%) minmax(0, 58%);
+  gap:2vw;
+}
+.technology-copy{
+  max-width:560px;
+  padding-left:0;
+  margin-top:20px;
+}
+.technology-copy h2{
+  max-width:560px;
+  font-size:clamp(50px,4.65vw,78px);
+  line-height:.90;
+}
+.technology-lead{max-width:455px;margin-bottom:24px}
+
+/* The capability list now lives on the LEFT, beneath the copy. */
+.technology-capabilities{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  column-gap:30px;
+  row-gap:0;
+  width:min(100%,520px);
+  margin-top:8px;
+}
+.technology-capabilities .tech-node{
+  position:relative;
+  inset:auto;
+  width:auto;
+  min-width:0;
+  min-height:62px;
+  padding:8px 0 10px;
+  display:grid;
+  grid-template-columns:38px minmax(0,1fr);
+  align-items:center;
+  gap:11px;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+  overflow:visible;
+  transform:none !important;
+}
+.technology-capabilities .tech-node::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:auto;
+  width:auto;
+  height:1px;
+  border-radius:0;
+  transform:none;
+  background:linear-gradient(90deg,color-mix(in srgb,var(--card-accent) 72%,transparent),rgba(255,255,255,.12),transparent);
+  box-shadow:0 0 8px color-mix(in srgb,var(--card-accent) 24%,transparent);
+  filter:none;
+  opacity:.8;
+}
+.technology-capabilities .tech-node::after{display:none}
+.technology-capabilities .tech-node-icon{
+  width:38px;height:38px;flex:none;border-radius:50%;
+  display:grid;place-items:center;
+  background:radial-gradient(circle at 34% 28%,rgba(255,255,255,.14),rgba(5,12,18,.92) 58%);
+  border:1px solid color-mix(in srgb,var(--card-accent) 72%,rgba(255,255,255,.25));
+  box-shadow:inset 0 0 14px rgba(255,255,255,.045),0 0 14px color-mix(in srgb,var(--card-accent) 16%,transparent);
+}
+.technology-capabilities .tech-node-icon::before{
+  content:"";position:absolute;inset:5px;border-radius:50%;
+  border:1px solid color-mix(in srgb,var(--card-accent) 36%,transparent);
+}
+.technology-capabilities .tech-node-icon span{
+  position:relative;z-index:2;font:500 16px/1 "Space Grotesk",sans-serif;
+  color:var(--card-accent);text-shadow:0 0 10px color-mix(in srgb,var(--card-accent) 65%,transparent)
+}
+.technology-capabilities .tech-node > div:last-child{min-width:0;padding:0}
+.technology-capabilities .tech-node b{font-size:9px;letter-spacing:.12em;white-space:nowrap}
+.technology-capabilities .tech-node small{margin-top:5px;font-size:6.5px;letter-spacing:.07em;white-space:nowrap}
+.tech-node-ai{--card-accent:#55bfff}
+.tech-node-cloud{--card-accent:#55bfff}
+.tech-node-security{--card-accent:#efc66c}
+.tech-node-integration{--card-accent:#efc66c}
+
+/* Right-side 16:9 media. Pager remains completely independent. */
+.technology-video-wrap{
+  position:relative;
+  width:min(760px,calc(100% - 56px));
+  aspect-ratio:16/9;
+  justify-self:end;
+  margin-right:42px;
+  z-index:4;
+  isolation:isolate;
+}
+
+/* Large floating OUTER glass frame: intentionally separated from the video. */
+.technology-video-wrap::before{
+  content:"";
+  position:absolute;
+  inset:-18px;
+  border-radius:31px;
+  padding:2px;
+  background:linear-gradient(125deg,
+    #f2c96f 0%,
+    rgba(242,201,111,.92) 22%,
+    rgba(255,255,255,.18) 48%,
+    rgba(67,216,204,.78) 76%,
+    #43d8cc 100%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.06),
+    0 0 22px rgba(242,201,111,.28),
+    0 0 34px rgba(67,216,204,.24),
+    0 18px 48px rgba(0,0,0,.36);
+  pointer-events:none;
+  z-index:5;
+}
+
+/* Soft glass halo behind the outer frame. */
+.technology-video-wrap::after{
+  content:"";
+  position:absolute;
+  inset:-25px;
+  border-radius:38px;
+  background:linear-gradient(120deg,rgba(242,201,111,.12),transparent 34%,transparent 62%,rgba(67,216,204,.12));
+  filter:blur(14px);
+  opacity:.9;
+  pointer-events:none;
+  z-index:-1;
+}
+
+/* The video itself is the INNER frame. */
+.technology-video-outer{
+  position:absolute;
+  inset:0;
+  border-radius:24px;
+  padding:2px;
+  background:linear-gradient(125deg,
+    rgba(242,201,111,.96) 0%,
+    rgba(242,201,111,.55) 25%,
+    rgba(255,255,255,.30) 49%,
+    rgba(67,216,204,.58) 75%,
+    rgba(67,216,204,.92) 100%);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.07),
+    0 0 18px rgba(242,201,111,.12),
+    0 0 24px rgba(67,216,204,.10),
+    0 20px 55px rgba(0,0,0,.45);
+}
+
+/* Inner glass highlight — separate from the outer frame by the visible glass gap. */
+.technology-video-outer::before{
+  content:"";
+  position:absolute;
+  inset:7px;
+  border-radius:19px;
+  border:1px solid rgba(255,255,255,.34);
+  box-shadow:
+    inset 0 0 14px rgba(255,255,255,.07),
+    inset 0 0 28px rgba(67,216,204,.045);
+  pointer-events:none;
+  z-index:3;
+}
+
+.technology-video-inner{
+  position:relative;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  border-radius:21px;
+  background:rgba(2,7,12,.82);
+  border:1px solid rgba(255,255,255,.20);
+  box-shadow:
+    inset 0 0 32px rgba(255,255,255,.06),
+    inset 0 0 70px rgba(67,216,204,.05);
+}
+
+.technology-video{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.technology-video-sheen{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:2;
+  background:linear-gradient(110deg,rgba(255,255,255,.07),transparent 24%,transparent 72%,rgba(67,216,204,.05));
+  mix-blend-mode:screen;
+}
+
+/* Pager is intentionally not selected, moved, resized, or restyled here. */
+
+@media (min-width:1201px){
+  .technology-video-wrap{transform:translateX(-1vw)}
+}
+@media (max-width:1200px) and (min-width:821px){
+  .technology-stage{grid-template-columns:42% 58%;gap:1vw}
+  .technology-copy h2{font-size:clamp(44px,5vw,66px)}
+  .technology-video-wrap{width:min(650px,calc(100% - 42px));margin-right:34px}
+  .technology-capabilities{column-gap:18px}
+  .technology-capabilities .tech-node b{font-size:8px}
+  .technology-capabilities .tech-node small{font-size:5.8px}
+}
+@media (max-width:820px){
+  .technology-video-wrap::before{inset:-11px;border-radius:24px}
+  .technology-video-wrap::after{inset:-16px;border-radius:30px;filter:blur(10px)}
+  .technology-section{min-height:auto}
+  .technology-stage{grid-template-columns:1fr;gap:30px;padding-top:100px;padding-bottom:80px;align-items:start}
+  .technology-copy{max-width:100%;margin-top:0}
+  .technology-copy h2{font-size:clamp(44px,11vw,62px);max-width:100%}
+  .technology-lead{max-width:100%;font-size:12px}
+  .technology-capabilities{width:100%;max-width:620px;column-gap:20px}
+  .technology-capabilities .tech-node{min-height:58px}
+  .technology-capabilities .tech-node-icon{width:36px;height:36px}
+  .technology-capabilities .tech-node b{font-size:8px}
+  .technology-capabilities .tech-node small{font-size:5.8px}
+  .technology-video-wrap{
+    width:100%;margin:0;justify-self:stretch;aspect-ratio:16/9;transform:none;
+  }
+  .technology-video-outer{border-radius:19px;padding:2px}
+  .technology-video-outer::before{inset:6px;border-radius:15px}
+  .technology-video-inner{border-radius:17px}
+  .technology-scroll{display:none}
+}
+@media (max-width:520px){
+  .technology-capabilities{grid-template-columns:1fr 1fr;column-gap:12px}
+  .technology-capabilities .tech-node{grid-template-columns:32px minmax(0,1fr);gap:8px}
+  .technology-capabilities .tech-node-icon{width:32px;height:32px}
+  .technology-capabilities .tech-node-icon span{font-size:14px}
+  .technology-capabilities .tech-node b{font-size:7.5px;letter-spacing:.08em}
+  .technology-capabilities .tech-node small{font-size:5.1px;letter-spacing:.04em}
+}
+
+/* =========================================================
+   TECHNOLOGY — FINAL PAGER CLEARANCE
+   The global 01–10 pager stays exactly where it is.
+   Move ONLY the technology media frame left so its outer
+   glass frame never occupies the pager's visual lane.
+========================================================= */
+@media (min-width: 1201px){
+  .technology-video-wrap{
+    transform: translateX(clamp(-135px, -8.5vw, -92px));
+    margin-right: 42px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 821px){
+  .technology-video-wrap{
+    transform: translateX(-4vw);
+    margin-right: 34px;
+  }
+}
+
+/* SECTION 05 LEFT ACCENT — CHAMPAGNE */
+.technology-index span,
+.technology-kicker,
+.technology-copy h2 strong,
+.technology-cta {
+  color: #f2c96f;
+}
+
+/* =========================================================
+   SECTION 05 RESPONSIVE MASTER — FINAL
+   1001px+  : editorial copy + media stay side-by-side
+   1000px- : clean vertical stack (copy first, media second)
+   Locked sections are intentionally not touched.
+========================================================= */
+@media (min-width:1001px) and (max-width:1550px){
+  .technology-stage{
+    grid-template-columns:minmax(0,40%) minmax(0,60%);
+    gap:1.5vw;
+  }
+  .technology-copy{
+    max-width:520px;
+  }
+  .technology-video-wrap{
+    width:min(680px,calc(100% - 34px));
+    margin-right:24px;
+    transform:translateX(-2vw);
+  }
+}
+
+@media (max-width:1000px){
+  .technology-section{
+    min-height:auto;
+  }
+  .technology-stage{
+    grid-template-columns:1fr;
+    gap:34px;
+    padding-top:100px;
+    padding-bottom:80px;
+    align-items:start;
+  }
+  .technology-copy{
+    width:100%;
+    max-width:620px;
+    margin:0;
+    padding-left:0;
+  }
+  .technology-copy h2{
+    max-width:100%;
+  }
+  .technology-lead{
+    max-width:100%;
+  }
+  .technology-capabilities{
+    width:100%;
+    max-width:620px;
+  }
+  .technology-video-wrap{
+    width:min(760px,100%);
+    margin:0 auto;
+    justify-self:center;
+    transform:none;
+    aspect-ratio:16/9;
+  }
+}
+
+/* SECTION 05 — PAGER-SAFE DESKTOP/TABLET CLEARANCE
+   Keep the locked global right pager untouched. The technology media frame
+   must stay inside its own lane and never visually compete with the pager. */
+@media (min-width:1001px) and (max-width:1550px){
+  .technology-stage{
+    grid-template-columns:minmax(0,42%) minmax(0,58%);
+    gap:1vw;
+    padding-right:clamp(72px,5vw,92px);
+  }
+
+  .technology-video-wrap{
+    width:min(640px,calc(100% - 32px));
+    margin-right:32px;
+    justify-self:end;
+    transform:translateX(20px);
+  }
+}
+
+
+/* SECTION 05 — WIDE DESKTOP 1551px+
+   Keep the editorial block in its left lane, keep the media in the right lane,
+   and preserve clearance from the locked global pager. */
+@media (min-width:1551px){
+  .technology-stage{
+    grid-template-columns:minmax(0,42%) minmax(0,58%);
+    gap:1vw;
+    padding-right:clamp(120px,10vw,160px);
+  }
+  .technology-copy{
+    max-width:520px;
+  }
+  .technology-video-wrap{
+    width:min(720px,100%);
+    margin-right:0;
+    justify-self:end;
+    transform:none;
+  }
+}
+
+/* SECTION 05 — 821px–1000px STACKED MEDIA
+   Keep the copy and video vertically stacked, but reserve a clean lane
+   for the locked global pager instead of allowing the video to span the
+   entire stage width. */
+@media (min-width:821px) and (max-width:1000px){
+  .technology-stage{
+    grid-template-columns:1fr;
+    gap:30px;
+    padding-right:92px;
+  }
+  .technology-copy{
+    width:100%;
+    max-width:620px;
+  }
+  .technology-video-wrap{
+    width:min(620px,100%);
+    max-width:620px;
+    margin:0 auto;
+    justify-self:center;
+    transform:none;
+    aspect-ratio:16/9;
+  }
+}
+
+/* SECTION 05 — EXTRA-NARROW 320–400px MEDIA CLEARANCE
+   The glass frame intentionally extends beyond .technology-video-wrap.
+   Give the wrap a small internal side allowance so the outer frame is
+   fully visible instead of being clipped by the viewport. */
+@media (max-width:400px){
+  .technology-video-wrap{
+    width:calc(100% - 22px);
+    max-width:none;
+    margin-left:auto;
+    margin-right:auto;
+    justify-self:center;
+  }
+}
+
+/* SECTION 05 — 320–400px EDITORIAL TEXT CLEARANCE
+   Keep the locked content, but give the heading a little more breathing room
+   so long serif lines do not touch or clip against the viewport edge. */
+@media (max-width:400px){
+  .technology-copy{
+    width:calc(100% - 8px);
+    max-width:none;
+  }
+  .technology-copy h2{
+    font-size:clamp(31px,10.2vw,34px);
+    max-width:100%;
+    letter-spacing:-0.05em;
+  }
+}
+
+
+/* =========================================================
+   SECTION 05 — EARTH VIDEO REVEAL
+   Replaces only the Section 05 media treatment.
+   Existing copy, grid, pager and all other sections remain untouched.
+========================================================= */
+.technology-video-wrap{
+  width:min(620px,calc(100% - 56px));
+  aspect-ratio:1/1;
+  position:relative;
+  justify-self:end;
+  margin-right:42px;
+  z-index:4;
+  isolation:isolate;
+  transform:none;
+}
+.technology-video-wrap::before,
+.technology-video-wrap::after{
+  display:none;
+}
+
+.technology-earth-wrap{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  opacity:0;
+  will-change:transform,opacity;
+}
+.technology-earth-wrap.is-animating{
+  animation:technologyEarthRoll 3.9s cubic-bezier(.22,.61,.36,1) both;
+}
+@keyframes technologyEarthRoll{
+  0%{
+    transform:translate3d(-115%,0,0) rotate(-360deg) scale(.82);
+    opacity:0;
+  }
+  16%{opacity:1}
+  100%{
+    transform:translate3d(0,0,0) rotate(0deg) scale(1);
+    opacity:1;
+  }
+}
+
+.technology-earth-shell{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+  z-index:2;
+  pointer-events:none;
+  filter:saturate(.88) contrast(1.06) brightness(.92)
+          drop-shadow(0 0 22px rgba(242,201,111,.22))
+          drop-shadow(0 0 34px rgba(239,198,108,.10));
+}
+
+.technology-earth-video{
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:100%;
+  aspect-ratio:1/1;
+  transform:translate(-50%,-50%) scale(.90);
+  opacity:0;
+  overflow:hidden;
+  border-radius:50%;
+  background:#000;
+  z-index:3;
+  box-shadow:
+    inset 0 0 70px 22px rgba(0,0,0,.92);
+  transition:opacity .95s ease,transform .95s cubic-bezier(.2,.8,.2,1);
+}
+.technology-earth-video.is-revealed{
+  opacity:1;
+  transform:translate(-50%,-50%) scale(1);
+}
+.technology-earth-video video{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+}
+.technology-earth-video::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 50% 48%,
+      transparent 52%,
+      rgba(0,0,0,.10) 63%,
+      rgba(0,0,0,.48) 79%,
+      rgba(0,0,0,.88) 94%,
+      rgba(0,0,0,1) 100%);
+  box-shadow:inset 0 0 62px 20px rgba(0,0,0,.78);
+}
+.technology-earth-video::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:3;
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 35% 28%,
+      rgba(255,255,255,.045),
+      transparent 35%,
+      rgba(0,0,0,.16) 78%,
+      rgba(0,0,0,.38) 100%);
+  pointer-events:none;
+}
+
+/* No decorative rings around the Earth/video: the reference uses one clean circular media edge. */
+
+@media (min-width:1551px){
+  .technology-video-wrap{
+    width:min(650px,100%);
+    margin-right:0;
+    justify-self:end;
+    transform:none;
+  }
+}
+@media (max-width:1550px) and (min-width:1001px){
+  .technology-video-wrap{
+    width:min(590px,calc(100% - 32px));
+    margin-right:32px;
+    justify-self:end;
+    transform:none;
+  }
+}
+@media (min-width:821px) and (max-width:1000px){
+  .technology-video-wrap{
+    width:min(590px,100%);
+    max-width:590px;
+    margin:0 auto;
+    justify-self:center;
+    transform:none;
+  }
+}
+@media (max-width:820px){
+  .technology-video-wrap{
+    width:min(92vw,620px);
+    max-width:none;
+    margin:0 auto;
+    justify-self:center;
+    aspect-ratio:1/1;
+    transform:none;
+  }
+}
+@media (max-width:400px){
+  .technology-video-wrap{
+    width:calc(100% - 22px);
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  .technology-earth-wrap.is-animating{
+    animation:none;
+    opacity:1;
+    transform:none;
+  }
+  .technology-earth-video{
+    transition:none;
+  }
+}
+
+/* =========================================================
+   SECTION 05 — RESPONSIVE PASS v1
+   Scope: #technology only.
+   Desktop composition above 1200px is preserved.
+   No global/nav/pager styles are changed here.
+========================================================= */
+
+/* Laptop: keep the approved two-column composition, but make every dimension
+   fluid enough for 1280/1366/1440 widths without collisions. */
+@media (min-width:1201px) and (max-width:1550px){
+  #technology .technology-stage{
+    grid-template-columns:minmax(0,42%) minmax(0,58%);
+    gap:clamp(12px,1.2vw,24px);
+    padding-right:clamp(88px,6vw,118px);
+  }
+
+  #technology .technology-copy{
+    max-width:clamp(470px,34vw,520px);
+  }
+
+  #technology .technology-copy h2{
+    font-size:clamp(52px,4.8vw,70px);
+    line-height:.91;
+  }
+
+  #technology .technology-lead{
+    max-width:clamp(390px,30vw,450px);
+    font-size:clamp(12px,.82vw,13px);
+  }
+
+  #technology .technology-video-wrap{
+    width:min(590px, min(40vw, calc(100% - 24px)));
+    aspect-ratio:1;
+    margin-right:clamp(22px,2.2vw,34px);
+    justify-self:end;
+    transform:none;
+  }
+
+  #technology .technology-capabilities{
+    max-width:520px;
+  }
+}
+
+/* Tablet landscape / small laptop: stack deliberately instead of forcing
+   the Earth into a narrow right-hand lane. */
+@media (min-width:821px) and (max-width:1200px){
+  #technology .technology-section,
+  #technology.technology-section{
+    min-height:auto;
+  }
+
+  #technology .technology-shell{
+    width:min(92vw,920px);
+    margin:0 auto;
+    min-height:auto;
+  }
+
+  #technology .technology-header{
+    top:30px;
+  }
+
+  #technology .technology-stage{
+    min-height:auto;
+    grid-template-columns:1fr;
+    gap:34px;
+    padding-top:104px;
+    padding-bottom:88px;
+    align-items:start;
+  }
+
+  #technology .technology-copy{
+    width:min(100%,700px);
+    max-width:700px;
+    margin:0;
+    padding-left:0;
+  }
+
+  #technology .technology-copy h2{
+    max-width:680px;
+    font-size:clamp(48px,6.5vw,68px);
+    line-height:.91;
+  }
+
+  #technology .technology-lead{
+    max-width:600px;
+    font-size:13px;
+  }
+
+  #technology .technology-video-wrap{
+    width:min(68vw,590px);
+    aspect-ratio:1;
+    max-width:590px;
+    margin:0 auto;
+    justify-self:center;
+    transform:none;
+  }
+
+  #technology .technology-capabilities{
+    width:100%;
+    max-width:680px;
+  }
+
+  #technology .technology-scroll{
+    display:none;
+  }
+}
+
+/* Mobile: single-column cinematic composition. The Earth remains a true
+   circle, fully visible inside the viewport, with no horizontal overflow. */
+@media (max-width:820px){
+  #technology .technology-shell{
+    width:calc(100% - 36px);
+    margin:0 18px;
+    min-height:auto;
+  }
+
+  #technology .technology-header{
+    top:24px;
+  }
+
+  #technology .technology-index{
+    gap:11px;
+    font-size:9px;
+    letter-spacing:.22em;
+  }
+
+  #technology .technology-index i{
+    width:34px;
+  }
+
+  #technology .technology-stage{
+    min-height:auto;
+    grid-template-columns:1fr;
+    gap:34px;
+    padding-top:88px;
+    padding-bottom:70px;
+    align-items:start;
+  }
+
+  #technology .technology-copy{
+    width:100%;
+    max-width:none;
+    margin:0;
+    padding:0;
+  }
+
+  #technology .technology-kicker{
+    margin-bottom:15px;
+    font-size:9px;
+    letter-spacing:.22em;
+  }
+
+  #technology .technology-copy h2{
+    width:100%;
+    max-width:680px;
+    font-size:clamp(39px,10.6vw,58px);
+    line-height:.91;
+    letter-spacing:-.045em;
+  }
+
+  #technology .technology-rule{
+    width:54px;
+    margin:22px 0 15px;
+  }
+
+  #technology .technology-lead{
+    width:100%;
+    max-width:620px;
+    margin-bottom:22px;
+    font-size:12px;
+    line-height:1.65;
+  }
+
+  #technology .technology-capabilities{
+    width:100%;
+    max-width:none;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+  }
+
+  #technology .tech-node{
+    width:100%;
+    min-height:72px;
+    padding:10px 10px;
+    grid-template-columns:32px minmax(0,1fr);
+    gap:9px;
+    border-radius:13px;
+  }
+
+  #technology .tech-node-icon{
+    width:32px;
+    height:32px;
+    border-radius:9px;
+  }
+
+  #technology .tech-node-icon span{
+    font-size:14px;
+  }
+
+  #technology .tech-node b{
+    font-size:7.5px;
+    letter-spacing:.07em;
+    white-space:normal;
+  }
+
+  #technology .tech-node small{
+    margin-top:5px;
+    font-size:5.2px;
+    line-height:1.35;
+    letter-spacing:.035em;
+  }
+
+  #technology .technology-cta{
+    height:42px;
+    margin-top:20px;
+    padding:0 17px;
+    font-size:9px;
+    letter-spacing:.11em;
+  }
+
+  #technology .technology-video-wrap{
+    width:min(88vw,520px);
+    max-width:100%;
+    aspect-ratio:1;
+    margin:0 auto;
+    justify-self:center;
+    transform:none;
+  }
+
+  #technology .technology-earth-wrap{
+    width:100%;
+    height:100%;
+  }
+
+  #technology .technology-earth-video{
+    width:100%;
+    height:100%;
+    aspect-ratio:1;
+  }
+
+  #technology .technology-scroll{
+    display:none;
+  }
+}
+
+/* Small phones: preserve the full circle and readable copy. */
+@media (max-width:520px){
+  #technology .technology-shell{
+    width:calc(100% - 28px);
+    margin:0 14px;
+  }
+
+  #technology .technology-header{
+    top:20px;
+  }
+
+  #technology .technology-stage{
+    gap:28px;
+    padding-top:78px;
+    padding-bottom:54px;
+  }
+
+  #technology .technology-copy h2{
+    font-size:clamp(34px,10.7vw,46px);
+    line-height:.92;
+  }
+
+  #technology .technology-lead{
+    font-size:11px;
+    line-height:1.6;
+  }
+
+  #technology .technology-capabilities{
+    gap:8px;
+  }
+
+  #technology .tech-node{
+    min-height:66px;
+    padding:9px 8px;
+    grid-template-columns:29px minmax(0,1fr);
+    gap:7px;
+  }
+
+  #technology .tech-node-icon{
+    width:29px;
+    height:29px;
+  }
+
+  #technology .tech-node-icon span{
+    font-size:12px;
+  }
+
+  #technology .tech-node b{
+    font-size:7px;
+  }
+
+  #technology .tech-node small{
+    font-size:4.8px;
+  }
+
+  #technology .technology-video-wrap{
+    width:min(90vw,390px);
+  }
+}
+
+@media (max-width:380px){
+  #technology .technology-capabilities{
+    grid-template-columns:1fr;
+  }
+
+  #technology .tech-node{
+    min-height:58px;
+  }
+
+  #technology .technology-copy h2{
+    font-size:clamp(31px,10.5vw,40px);
+  }
+
+  #technology .technology-video-wrap{
+    width:min(88vw,350px);
+  }
+}
+
+/* Respect accessibility without changing the normal animation. */
+@media (prefers-reduced-motion:reduce){
+  #technology .technology-earth-wrap.is-animating{
+    animation:none;
+    opacity:1;
+    transform:none;
+  }
+}
